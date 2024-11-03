@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap");
+
+* {
+  font-family: "Tiro Devanagari Hindi", serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.form {
+  margin: 0 auto;
+  padding-top: 7px;
+}
+
+.form-group {
+  padding: 4px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  cursor: pointer; /* Change cursor to pointer for cards */
+}
+
+.card-img-top {
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.filled-star {
+  color: gold; /* or any color you want for filled stars */
+}
+
+.empty-star {
+  color: lightgray; /* or any color you want for empty stars */
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border: none !important;
+}
+
+.card {
+  transition: transform 0.2s; /* Scale effect */
+  border: 1px solid #80808026 !important;
+}
+
+.card:hover {
+  transform: scale(1.05) !important; /* Scale on hover */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem; /* Adjust navbar brand size */
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+.img {
+  margin-top: 22px;
+}
+
+.truncated-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  line-height: 1.5em; /* Line height of your choice */
+  max-height: 4.5em; /* Height = 3 lines * line-height */
+}
+
+.card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+  color: var(--bs-card-title-color);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.collapse:not(.show) {
+  display: block !important;
+}
+
+.select-category {
+  padding: 0px 41px 0px 12px;
+  width: 138% !important;
+}
+
+.navbar {
+  box-shadow: 0px 20px 20px -20px rgb(193 200 213);
+  width: 98%;
+  margin: 0 auto;
+  padding: 11px 10px 11px 10px !important;
+  margin-top: -1px;
+}
+
+.card-body {
+  padding: 15px !important;
+}
+
+.card-body:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 2rem -0.25rem hsla(216, 9%, 44%, 0.1);
+}
+
+.hide {
+  display: none !important;
+}
+
+.card-title {
+  background: black;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-title:before {
+  content: "";
+  background: black;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-body:hover .card-title {
+  background-position: 0;
+}
+
+.card-body:hover .card-title::before {
+  width: 100%;
+}
+
+.card-body:hover .addcart {
+  color: white !important;
+  background: red !important;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 23px !important;
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+.ratings {
+  font-size: 22px;
+  margin-top: 26px;
+  margin-bottom: 8px;
+}
+
+.ratings span {
+  display: inline-block;
+  padding-right: 5px;
+  color: orange;
+}
+
+/* Styles for the details div */
+.card-body {
+  position: relative; /* Ensure proper positioning for absolute children */
+}
+
+.details {
+  display: none; /* Keep it hidden by default */
+  position: absolute; /* Position it absolutely */
+  top: 100%; /* Place it below the card */
+  left: 0; /* Align it with the left side of the card */
+  background: white; /* Add a background color */
+  width: 100%; /* Make it the same width as the card */
+  z-index: 10; /* Ensure it appears above other elements */
+  padding: 10px; /* Add some padding */
+  top: 397px;
+}
+
+.card-body:hover .details {
+  display: block; /* Show when hovering over the card */
+}
+.quantity button {
+  background: white !important;
+  border: none !important;
+  color: black !important;
+  font-size: 26px;
+  padding: 2px 2px 2px 2px;
+}
+.quantity {
+  border: 1px solid #cad0d9;
+  width: 128px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+.divleft {
+  display: flex;
+  width: 509px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divright {
+  display: flex;
+  gap: 20px;
+}
+.col_2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 76px;
+  margin-top: 41px;
+}
+button.btn.btn-danger.mt-2.ms-2 {
+  background: red !important;
+}
+.box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 15px -3px,
+    rgba(0, 0, 0, 0.04) 0px 10px 20px -2px;
+}
+.list-group-item {
+  border: none !important;
+}
+.dLeft {
+  float: left;
+}
+.dRight {
+  float: left;
+}
+.ajs-message .ajs-success .ajs-visible {
+  right: 0px !important;
+  float: right !important;
+}
